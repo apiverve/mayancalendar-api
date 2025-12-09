@@ -1,0 +1,82 @@
+openapi: 3.0.4
+info:
+  title: Mayan Calendar
+  description: Mayan Calendar converts Gregorian dates to the ancient Mayan calendar system. Returns the Long Count, Tzolkin (260-day sacred calendar), and Haab (365-day civil calendar) dates.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/mayancalendar:
+    get:
+      summary: Convert to Mayan Calendar
+      description: Mayan Calendar converts Gregorian dates to the ancient Mayan calendar system. Returns the Long Count, Tzolkin (260-day sacred calendar), and Haab (365-day civil calendar) dates.
+      operationId: mayancalendar
+      parameters:
+      - name: date
+        in: query
+        schema:
+          type: string
+        required: true
+        description: The Gregorian date in YYYY-MM-DD format
+        example: 2024-12-21
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  gregorian: 2024-12-21
+                  longCount:
+                    formatted: 13.0.12.3.3
+                    baktun: 13
+                    katun: 0
+                    tun: 12
+                    winal: 3
+                    kin: 3
+                  tzolkin:
+                    number: 6
+                    dayName: Akbal
+                    formatted: 6 Akbal
+                  haab:
+                    day: 6
+                    monthName: Kankin
+                    formatted: 6 Kankin
+                  calendarRound: 6 Akbal 6 Kankin
+                  daysSinceEpoch: 1876383
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
