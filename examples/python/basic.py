@@ -17,14 +17,11 @@ def call_mayancalendar_api():
     Make a GET request to the Mayan Calendar API
     """
     try:
-        # Query parameters
-        params &#x3D; {&#x27;date&#x27;: &#x27;2024-12-21&#x27;}
-
         headers = {
             'x-api-key': API_KEY
         }
 
-        response = requests.get(API_URL, headers=headers, params=params)
+        response = requests.get(API_URL, headers=headers)
 
         # Raise exception for HTTP errors
         response.raise_for_status()
