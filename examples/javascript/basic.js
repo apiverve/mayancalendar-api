@@ -13,12 +13,7 @@ const API_URL = 'https://api.apiverve.com/v1/mayancalendar';
  */
 async function callMayanCalendarAPI() {
   try {
-    // Query parameters
-    const params &#x3D; new URLSearchParams({
-            date: &#x27;2024-12-21&#x27;
-        });
-
-    const response = await fetch(`${API_URL}?${params}`, {
+    const response = await fetch(API_URL, {
       method: 'GET',
       headers: {
         'x-api-key': API_KEY
