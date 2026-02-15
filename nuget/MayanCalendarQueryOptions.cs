@@ -12,7 +12,6 @@ namespace APIVerve.API.MayanCalendar
     {
         /// <summary>
         /// The Gregorian date in YYYY-MM-DD format
-        /// Example: 2024-12-21
         /// </summary>
         [JsonProperty("date")]
         public string Date { get; set; }
