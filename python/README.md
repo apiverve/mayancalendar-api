@@ -236,8 +236,9 @@ from apiverve_mayancalendar.apiClient import MayancalendarAPIClient
 
 api = MayancalendarAPIClient("[YOUR_API_KEY]")
 
+query = { "date": "2024-12-21" }
+
 try:
-    query = { "date": "2024-12-21" }
     result = api.execute(query)
     print(result)
 finally:
