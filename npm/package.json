@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/mayancalendar",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "Mayan Calendar converts Gregorian dates to the ancient Mayan calendar system. Returns the Long Count, Tzolkin (260-day sacred calendar), and Haab (365-day civil calendar) dates.",
   "main": "index.js",
   "types": "index.d.ts",
