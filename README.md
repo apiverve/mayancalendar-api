@@ -30,7 +30,11 @@ The Mayan Calendar API provides a simple, reliable way to integrate mayan calend
 ```javascript
 async function callMayanCalendarAPI() {
     try {
-        const response = await fetch('https://api.apiverve.com/v1/mayancalendar', {
+        const params = new URLSearchParams({
+            date: '2024-12-21'
+        });
+
+        const response = await fetch(`https://api.apiverve.com/v1/mayancalendar?${params}`, {
             method: 'GET',
             headers: {
                 'x-api-key': 'YOUR_API_KEY_HERE'
@@ -50,7 +54,7 @@ callMayanCalendarAPI();
 ### Using cURL
 
 ```bash
-curl -X GET "https://api.apiverve.com/v1/mayancalendar?param=value" \
+curl -X GET "https://api.apiverve.com/v1/mayancalendar?date=2024-12-21" \
   -H "x-api-key: YOUR_API_KEY_HERE"
 ```
 
@@ -150,7 +154,7 @@ go get github.com/apiverve/mayancalendar-api/go
 |---------|---------|
 | **Multi-language SDKs** | Native packages for JavaScript, Python, C#, Go, and Android |
 | **Simple Integration** | Single API key authentication, consistent response format |
-| **Production Ready** | 99.9% uptime, fast response times, used by thousands of developers |
+| **Production Ready** | 99.9% uptime SLA, served from 24 global regions |
 | **Comprehensive Docs** | Full examples, OpenAPI spec, and dedicated support |
 
 ---
@@ -169,7 +173,7 @@ go get github.com/apiverve/mayancalendar-api/go
 The Mayan Calendar API is commonly used for:
 
 - **Web Applications** - Add mayan calendar features to your frontend or backend
-- **Mobile Apps** - Native SDKs for iOS and Android development
+- **Mobile Apps** - Native SDKs for Android development
 - **Automation** - Integrate with n8n, Zapier, or custom workflows
 - **SaaS Products** - Enhance your product with mayan calendar capabilities
 - **Data Pipelines** - Process and analyze data at scale
