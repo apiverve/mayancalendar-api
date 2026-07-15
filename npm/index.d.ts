@@ -4,42 +4,54 @@ declare module '@apiverve/mayancalendar' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface mayancalendarResponse {
     status: string;
     error: string | null;
     data: MayanCalendarData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface MayanCalendarData {
-      gregorian:      Date;
+      gregorian:      Date | null;
       longCount:      LongCount;
       tzolkin:        Tzolkin;
       haab:           Haab;
-      calendarRound:  string;
-      daysSinceEpoch: number;
+      calendarRound:  null | string;
+      daysSinceEpoch: number | null;
   }
   
   interface Haab {
-      day:       number;
-      monthName: string;
-      formatted: string;
+      day:       number | null;
+      monthName: null | string;
+      formatted: null | string;
   }
   
   interface LongCount {
-      formatted: string;
-      baktun:    number;
-      katun:     number;
-      tun:       number;
-      winal:     number;
-      kin:       number;
+      formatted: null | string;
+      baktun:    number | null;
+      katun:     number | null;
+      tun:       number | null;
+      winal:     number | null;
+      kin:       number | null;
   }
   
   interface Tzolkin {
-      number:    number;
-      dayName:   string;
-      formatted: string;
+      number:    number | null;
+      dayName:   null | string;
+      formatted: null | string;
   }
 
   export default class mayancalendarWrapper {
