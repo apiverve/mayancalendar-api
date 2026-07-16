@@ -191,11 +191,48 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Mayan Calendar API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "gregorian": "2024-12-21",
+    "longCount": {
+      "formatted": "13.0.12.3.3",
+      "baktun": 13,
+      "katun": 0,
+      "tun": 12,
+      "winal": 3,
+      "kin": 3
+    },
+    "tzolkin": {
+      "number": 6,
+      "dayName": "Akbal",
+      "formatted": "6 Akbal"
+    },
+    "haab": {
+      "day": 6,
+      "monthName": "Kankin",
+      "formatted": "6 Kankin"
+    },
+    "calendarRound": "6 Akbal 6 Kankin",
+    "daysSinceEpoch": 1876383
+  }
 }
 ```
 
