@@ -25,12 +25,15 @@ namespace APIVerve.API.MayanCalendar
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
     {
         [JsonProperty("gregorian")]
-        public DateTimeOffset Gregorian { get; set; }
+        public DateTimeOffset? Gregorian { get; set; }
 
         [JsonProperty("longCount")]
         public LongCount LongCount { get; set; }
@@ -45,13 +48,13 @@ namespace APIVerve.API.MayanCalendar
         public string CalendarRound { get; set; }
 
         [JsonProperty("daysSinceEpoch")]
-        public long DaysSinceEpoch { get; set; }
+        public long? DaysSinceEpoch { get; set; }
     }
 
     public partial class Haab
     {
         [JsonProperty("day")]
-        public long Day { get; set; }
+        public long? Day { get; set; }
 
         [JsonProperty("monthName")]
         public string MonthName { get; set; }
@@ -66,30 +69,42 @@ namespace APIVerve.API.MayanCalendar
         public string Formatted { get; set; }
 
         [JsonProperty("baktun")]
-        public long Baktun { get; set; }
+        public long? Baktun { get; set; }
 
         [JsonProperty("katun")]
-        public long Katun { get; set; }
+        public long? Katun { get; set; }
 
         [JsonProperty("tun")]
-        public long Tun { get; set; }
+        public long? Tun { get; set; }
 
         [JsonProperty("winal")]
-        public long Winal { get; set; }
+        public long? Winal { get; set; }
 
         [JsonProperty("kin")]
-        public long Kin { get; set; }
+        public long? Kin { get; set; }
     }
 
     public partial class Tzolkin
     {
         [JsonProperty("number")]
-        public long Number { get; set; }
+        public long? Number { get; set; }
 
         [JsonProperty("dayName")]
         public string DayName { get; set; }
 
         [JsonProperty("formatted")]
         public string Formatted { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
