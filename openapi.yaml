@@ -19,7 +19,7 @@ servers:
 paths:
   /v1/mayancalendar:
     get:
-      summary: Convert to Mayan Calendar
+      summary: Mayan Calendar
       description: Convert a Gregorian date to Mayan calendar formats
       operationId: mayancalendar
       parameters:

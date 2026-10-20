@@ -1,13 +1,13 @@
-# [Mayan Calendar API](https://apiverve.com/marketplace/mayancalendar?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Mayan Calendar API](https://apiverve.com/marketplace/mayancalendar?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
 Mayan Calendar converts Gregorian dates to the ancient Mayan calendar system. Returns the Long Count, Tzolkin (260-day sacred calendar), and Haab (365-day civil calendar) dates.
 
 The Mayan Calendar API provides a simple, reliable way to integrate mayan calendar functionality into your applications. Built for developers who need production-ready mayan calendar capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/mayancalendar?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/mayancalendar?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/mayancalendar?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/mayancalendar?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -161,7 +161,7 @@ go get github.com/apiverve/mayancalendar-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Mayan Calendar API](https://apiverve.com/marketplace/mayancalendar?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Mayan Calendar API](https://apiverve.com/marketplace/mayancalendar?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/mayancalendar](https://docs.apiverve.com/ref/mayancalendar)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -240,7 +240,7 @@ A real response from the Mayan Calendar API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Mayan Calendar API](https://apiverve.com/marketplace/mayancalendar?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Mayan Calendar API](https://apiverve.com/marketplace/mayancalendar?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
