@@ -1,6 +1,6 @@
 name: apiverve_mayancalendar
 description: "Mayan Calendar converts Gregorian dates to the ancient Mayan calendar system. Returns the Long Count, Tzolkin (260-day sacred calendar), and Haab (365-day civil calendar) dates."
-version: 1.2.5
+version: 1.2.6
 homepage: https://apiverve.com/marketplace/mayancalendar?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/mayancalendar-api/tree/main/dart
 
